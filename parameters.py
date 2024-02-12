@@ -1,34 +1,7 @@
-""" These are the two mains classes. """
-
-import random as rd
-
-
-class attributes:
-    
-    def __init__(self, attribute, name):
-        self.attribute = attribute
-        self.length = len(attribute)
-        self.name = name
-        return 
-        
-    def clear(self):
-        self.attribute = []
-        return self.attribute
-    
-    def add_attr(self, attribute):
-        self.attribute.append(attribute)
-        return self.attribute
-    
-    def pick(self):
-        attr = rd.choice(self.attribute)
-        return attr
-    
-    
-class parameters:
+class Parameters:
     
     def __init__(self, param): 
         self.param = param
-        self.length = len(param)
      
         
     def add_param(self, param):
@@ -57,8 +30,8 @@ class parameters:
                     return self.param
             return f"{param} not found in parameters."
                   
-    def display_char(self):
-        for att in self.param:
-            print(f"Your character's {att.name} is {att.pick()}")
-        return 
+    # Will interact better with python's builtin stuff
+    def __str__(self):
+        res = [f"Your character's {att.name} is {att.pick()}" for att in self.param]
+        return "\n".join(res)
 
