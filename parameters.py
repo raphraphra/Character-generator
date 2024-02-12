@@ -1,3 +1,5 @@
+from attributes.py import Attributes
+
 class Parameters:
     
     def __init__(self, param): 
