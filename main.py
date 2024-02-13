@@ -26,7 +26,6 @@ def main():
 
                 check = input("Build another attribute?")
 
-            state_machine = input("What do you want to do?")
     
 
         case "Delete":
@@ -37,17 +36,22 @@ def main():
 
                 check = input("Continue deleting?")
 
-            state_machine = input("What do you want to do?")
-            
 
         case "Display":
             roll = "Yes"
             while roll == "Yes":
                 parameters.__str__()
                 roll = input("Roll another time?")
-            
 
 
-        case "Escape":
 
+        case "Escape"
+    
             return 
+
+
+        case _:
+
+            state_machine = input("What do you want to do?")
+
+
