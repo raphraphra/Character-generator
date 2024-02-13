@@ -2,7 +2,7 @@ import random as rd
 
 class attributes:
     
-    def __init__(self, attribute, name):
+    def __init__(self, attribute = [], name):
         self.attribute = attribute
         self.name = name 
         
