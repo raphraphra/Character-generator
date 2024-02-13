@@ -2,7 +2,7 @@ from attributes.py import Attributes
 
 class Parameters:
     
-    def __init__(self, param): 
+    def __init__(self, param = []): 
         self.param = param
      
         
