@@ -15,7 +15,7 @@ def main():
             while check == "Yes":
                               
                 new_param = input("What attribute do you want to create?")
-                new_param = Attributes([], str(new_param))
+                new_param = Attributes(str(new_param))
                 add = ""
 
                 while add != "/":
