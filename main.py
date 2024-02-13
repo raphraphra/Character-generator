@@ -1,60 +1,31 @@
 from attributes.py import Attributes
 from parameters.py import Parameters
 
-def main() -> bool:
-    print("Hello. Let's a build a character !")
-    state_machine = "addAttribute"
-    parameters = Parameters()
-    
-    match(state_machine):
-            
-        case "addAttribute":
-                
-            check = input("Build a new attribute? Yes or No.")
-                
-            while check == "Yes":
-                              
-                new_param = input("What attribute do you want to create?")
-                new_param = Attributes(str(new_param))
-                add = ""
+def add_attribute():
+    ...
 
-                while add != "/":
+def delete():
+    ...
 
-                    add = input(f"Add an element into {new_param} (/ to escape).")
+def display():
+    ...
 
-                    new_param.add_attr(add)
+functions = {
+    "add_attribute": add_attribute 
+    "delete": delete
+    "display": display 
+}
 
-                check = input("Build another attribute?")
+def parse_user(command_line):
+    return command_line
 
-    
+def main():
+    inp = input("Enter a command:")
+    command = parse_user(inp)
 
-        case "Delete":
-            check = "Yes"
-            while check == "Yes":
-                attr = input("Which attribute to delete from?")
-                parameters.remove_attr(attr)
+    functions[command]()
 
-                check = input("Continue deleting?")
+    return command == "exit"
 
-
-        case "Display":
-            roll = "Yes"
-            while roll == "Yes":
-                parameters.__str__()
-                roll = input("Roll another time?")
-
-
-
-        case "Escape"
-    
-            return False
-
-        state_machine = input("What do you want to do?")
-
-
-while True:
-
-
-    
-
-
+while True():
+    if main(): break
