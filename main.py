@@ -4,7 +4,7 @@ from parameters.py import Parameters
 def main():
     print("Hello. Let's a build a character !")
     state_machine = "addAttribute"
-    parameters = Parameters([])
+    parameters = Parameters()
     
     match(state_machine):
             
