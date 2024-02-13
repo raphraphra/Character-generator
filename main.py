@@ -1,7 +1,7 @@
 from attributes.py import Attributes
 from parameters.py import Parameters
 
-def main():
+def main() -> bool:
     print("Hello. Let's a build a character !")
     state_machine = "addAttribute"
     parameters = Parameters()
@@ -47,11 +47,14 @@ def main():
 
         case "Escape"
     
-            return 
+            return False
+
+        state_machine = input("What do you want to do?")
 
 
-        case _:
+while True:
 
-            state_machine = input("What do you want to do?")
+
+    
 
 
