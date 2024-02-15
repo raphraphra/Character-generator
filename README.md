@@ -26,6 +26,13 @@ Table of all comands:
 
 |Commands|Action|Argument|
 |--------|------|--------|
-|c_param |Creates a new parameter.|Name|
-|add_att |
+|c_param |Creates a new parameter|Name|
+|add_att |Adds attributes to a parameter|Name, contents|
+|clear|Remove a certain attribute from a parameter, or an entire parameter|Name (attribute is later asked)|
+|add_param|Adds a parameter to the container|Parameter|
+|display|Generates a seed|None|
+|stop|Exits the code|None|
+|show_commands|Displays all of the commands|None|
+|show_seeds|Displays all seeds in order|None|
+|show_param|Displays all current parameters|None|
 
