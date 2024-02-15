@@ -22,7 +22,7 @@ Example : c_param Name will create a parameter named "Name".
 Other useful commands include show_commands, show_seeds, and show_param.
 At the end of it all, you can use the command "display" to generate a character with random attributes. These seeds are then stored in a variable for your liking. 
 
-##Table of all comands: ❤️
+## Table of all comands: ❤️
 
 |Commands|Action|Argument|
 |--------|------|--------|
